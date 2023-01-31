@@ -1,0 +1,87 @@
+.header{
+    width: 100%;
+    height: 70px;
+    line-height: 60px;
+}
+
+.nav__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.logo img{
+    width: 1.5rem;
+    height: 1.5rem;
+
+
+}
+
+.logo h1{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--pramary-color);
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    column-gap: 2.7rem;
+    margin-bottom: 0;
+}
+
+.nav__item a{
+    color: var(--pramary-color);
+    font-weight: 500;
+}
+.nav__icons{
+    display: flex;
+    align-items: center;
+    column-gap: 1.2rem;
+}
+.nav__icons span i {
+    font-size: 2.1rem;
+    color: var(--pramary-color);
+    cursor: pointer;
+}
+.cart__icon,
+.fav__icon{
+    position: relative;
+
+}
+.badge{
+    position:absolute;
+    top: 5%;
+    right: 2%;
+    content: '';
+    background: var(--pramary-color);
+    color: #fff;
+    border-radius: 50px;
+    font-size: .8rem;
+    font-weight: 600;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+}
+
+
+.nav__icons span img{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+
+}
+.mobile__menu {
+    font-size: 1.3rem;
+    color: var(--pramary-color);
+    display: none;
+}
+.nav__active{
+    font-size: 700 !important;
+}
