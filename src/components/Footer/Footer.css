@@ -1,0 +1,42 @@
+.footer{
+     padding-left: 60px;
+     padding-top: 60px;
+     background: var(--primary-color);
+     
+}
+.footer__text{
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.735);
+
+}
+
+.footer__quck-links ul li{
+    background: transparent !important;
+}
+
+.footer__quck-links ul li a{
+    color: rgba(255, 255, 255, 0.735);
+}
+.quck__link-title{
+    margin-bottom: 20px;
+    color: 1.1rem;
+    font-size: 1.1rem;
+
+}
+.footer__contact li{
+    color: rgba(255, 255, 255, 0.735);
+
+} 
+
+.footer__contact li span{
+    font-size: 1.2rem;
+}
+
+.footer_copyright{
+    color: rgba(255, 255, 255, 0.735);
+    font-size: .9rem;
+    margin-top: 40px;
+    text-align: center;
+    margin: 15px;
+}
+

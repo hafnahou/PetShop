@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import {NavLink} from 'react-router-dom'
 import './Header.css'
 
@@ -24,7 +24,35 @@ const nav__links =[
 
 ]
 const Header = () => {
-  return <header className='header'>
+
+  const hederRef =useRef(null)
+
+  const menuRef =useRef(null)
+
+  const stickyHeaderfunc = () =>{
+    window.addEventListener('scroll',()=>{
+      if(document.body.scrollTop > 80 ||
+         document.documentElement.scrollTop > 80 
+          ) {
+        hederRef.current.classList.add('sticky__header')
+      } else{
+        hederRef.current.classList.remove('sticky__header')
+      }
+    })
+  }
+
+    useEffect(()=>{
+      stickyHeaderfunc()
+
+      return ()=> window.removeEventListener('scroll',stickyHeaderfunc)
+    })
+
+
+
+    const menuToggle =()=> menuRef.current.classList.toggle('active__menu')
+
+
+  return <header className='header' ref={hederRef}>
        <Container>
         <Row>
           <div className="nav__wrapper">
@@ -33,12 +61,11 @@ const Header = () => {
                 <img src={logo} alt="logo" />
                 <div>
                   <h1>Mtm Petshop</h1>
-                   {/* <p>Since 2021</p> */}
                 </div>
                </div>
 
 
-               <div className="navigation">
+               <div className="navigation" ref={menuRef} onClick={menuToggle}>
                 <ul className="menu">
              
                  {
@@ -72,14 +99,16 @@ const Header = () => {
                 <span>
                   <motion.img whileTap={{scale:1.1}} src={userIcon} alt="" />
                 </span>
-
-               </div>
-
-               <div className="mobile__menu">
-                <span>
+                   
+                <div className="mobile__menu">
+                <span onClick={menuToggle}>
                   <i class="ri-menu-line"></i>
                 </span>
                </div>
+
+               </div>
+
+          
 
 
 
