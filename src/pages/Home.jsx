@@ -4,7 +4,11 @@ import React from 'react'
 import Helmet from '../components/Helmet/Helmet'
 import { Container,Row,Col } from 'reactstrap'
 import heroImg from '../assets/images/hero-img.jpg'
+import { Link } from 'react-router-dom'
 import "../Style/home.css"
+import {motion} from 'framer-motion'
+import Service from '../services/Service'
+import ProductList from '../components/UI/ProductList'
 const Home = () => {
 
     const year =new Date().getFullYear()
@@ -21,7 +25,9 @@ const Home = () => {
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                           Consectetur porro obcaecati qua</p>
 
-                          <button className='buy__btn'>Shop Now</button>
+                          
+                            
+                            <button className='buy__btn'><Link to="/shop">Shop Now</Link></button>
                 </div>
                </Col>
 
@@ -34,7 +40,18 @@ const Home = () => {
 
           </Container>
     </section>
-            
+
+     <Service/>
+            <section className="trending__products">
+                 <Container>
+                  <Row>
+                       <Col lg='12' className='text-center'>
+                        <h2 className='section__title'>Trending Products</h2>
+                       </Col>
+                       <ProductList/>
+                  </Row>
+                 </Container>
+            </section>
      </Helmet>
      
 }
@@ -43,4 +60,5 @@ export default Home
 
 
 
+ 
  
