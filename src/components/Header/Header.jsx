@@ -11,7 +11,7 @@ import { Container,Row,Badge } from 'reactstrap'
 const nav__links =[
   {
     path:'home',
-    display:'Home'
+    display:'home'
   },
   {
     path:'shop',
