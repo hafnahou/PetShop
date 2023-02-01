@@ -1,23 +1,28 @@
 import React from 'react'
-import productImg from '../../assets/images/Dogfood/n&d.jpg'
 import {motion} from 'framer-motion'
 import '../../Style/product-card.css'
 import {Col} from 'reactstrap'
-const ProductCard = () => {
+import {Link} from "react-router-dom"
+
+const ProductCard = ({item}) => {
   return (
-    <Col lg='3' md='4'>
+    <Col lg='3' md='4' className='mb-2'>
             <div className="product_item">
                 {/* proble */}
         <div className="product_img">       
-            <img src={productImg} alt="" />
+            <motion.img whileHover={{scale:0.9}} src={item.imgUrl} alt="" />
         </div>
-        <h3 className="Product__name">
-            Moders arrmchai
-        </h3>
-        <span>chair</span>
-        <div className="product__card-button">
-            <span className='price'>299</span>
-            <span><i class="ri-add-line"></i></span>
+
+         <div className='p-2 product__info'>
+         <h3 className="Product__name"><Link to={`/shop/${item.id}`}>{item.productName}</Link></h3>
+        <span >{item.category}</span>
+         </div>
+
+        <div className="product__card-button d-flex align-items-center justify-content-between p-2">
+            <span className='price'>{item.price}</span>
+            <motion.span whileTap={{scale:1.2}} span>
+                <i class="ri-add-line"></i>
+            </motion.span>
         </div>
        </div>
     
