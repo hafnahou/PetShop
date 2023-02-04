@@ -16,11 +16,12 @@ import Clock from "../components/UI/Clock"
 
 const Home = () => {
 
-    const [trendingProducts,setTrendingProducts]=useState([])
-    const [bestsalesProducts,setBestsalesProducts]=useState([])
-    const [mobileProducts,setMobileProducts]=useState([])
-    const [wirlessProducts,setwirlessProducts]=useState([])
-    const [popularProducts,setPopularProducts]=useState([])
+    const [TopbrandsProducts,setTopBrands]=useState([])
+    const [DogFoods,setDogFoods]=useState([])
+    const [catFoods,SetCatFoods]=useState([])
+    const [FishFood,setFishFoods]=useState([])
+    const [Bowl,setBowl]=useState([])
+    const [medicines,setMedicines]=useState([])
 
 
 
@@ -29,32 +30,44 @@ const Home = () => {
     const year =new Date().getFullYear()
 
     useEffect(()=>{
-      const filteredTrendingProducts =products.filter(
-        (item)=>item.category === "chair" )
+      const filteredTopBrands =products.filter(
+        (item)=>item.category === "brand" )
        
-        const filteredBestsalesProducts =products.filter(
-          (item)=>item.category === "sofa" )
+        const filteredDogFoods =products.filter(
+          (item)=>item.category === "Dog" )
+
+          const filteredcatFoods =products.filter(
+            (item)=>item.category === "Cat" )
 
 
-          const filteredMobileProducts =products.filter(
-            (item)=>item.category === "mobile" )
+          const filteredFishfoods =products.filter(
+            (item)=>item.category === "Fishe" )
 
-            const filteredwirlessProducts =products.filter(
-              (item)=>item.category === "wireless" )
+            const filteredFeedBowl =products.filter(
+              (item)=>item.category === "Bowl" )
              
               const filteredPopularProducts =products.filter(
                 (item)=>item.category === "watch"
               )
+
+              const filteredmedicines =products.filter(
+                (item)=>item.category === "med"
+              )
+
+
+
+
         
             
        
         
       
-        setTrendingProducts(filteredTrendingProducts);
-        setBestsalesProducts(filteredBestsalesProducts)
-        setMobileProducts(filteredMobileProducts)
-        setwirlessProducts(filteredwirlessProducts)
-        setPopularProducts(filteredPopularProducts)
+        setTopBrands(filteredTopBrands);
+        setDogFoods(filteredDogFoods)
+        SetCatFoods(filteredcatFoods)
+        setFishFoods(filteredFishfoods)
+        setBowl(filteredFeedBowl)
+        setMedicines(filteredmedicines)
 
 
 
@@ -76,13 +89,13 @@ const Home = () => {
 
                           
                             
-                            <button className='buy__btn'><Link to="/shop">Shop Now</Link></button>
+                     <button className='buy__btn'><Link to="/shop">Shop Now</Link></button>
                 </div>
                </Col>
 
               <Col lg='6' md='6'>
                 <div className="hero__img">
-                    <img src={heroImg} alt="" />
+                    <img  src={heroImg} alt="" />
                  </div>  
                </Col>
              </Row>
@@ -92,14 +105,16 @@ const Home = () => {
 
      <Service/>
             
-            {/* trending */}
+            {/* top brands */}
             <section className="trending__products">
                  <Container>
                   <Row>
                        <Col lg='12' className='text-center'>
-                        <h2 className='section__title'>Trending Products</h2>
+                        <h2 className='section__title'>Top Brands</h2>
                        </Col>
-                       <ProductList data={trendingProducts}/>
+                       <ProductList data={TopbrandsProducts}/>
+                    
+
                   </Row>
                  </Container>
             </section>
@@ -109,9 +124,23 @@ const Home = () => {
               <Container>
               <Row>
                     <Col lg='12' className='text-center'>
-                     <h2 className='section__title'>Best Sales</h2>
+                     <h2 className='section__title'>Dog Foods</h2>
                       </Col>
-                      <ProductList data={bestsalesProducts}/>   
+                      <ProductList data={DogFoods}/>   
+                  </Row>
+              </Container>
+            </section>
+             
+
+             {/* cat foods */}
+
+            <section className='best-sales'>
+              <Container>
+              <Row>
+                    <Col lg='12' className='text-center'>
+                     <h2 className='section__title'>Cat Foods</h2>
+                      </Col>
+                      <ProductList data={catFoods}/>   
                   </Row>
               </Container>
             </section>
@@ -143,26 +172,41 @@ const Home = () => {
                    <Container>
                       <Row>
                           <Col lg='12' className='text-center mb-5'>
-                              <h2 className="section__title">New Arrivals</h2>
+                              <h2 className="section__title">Toys</h2>
                           </Col>
 
-                         <ProductList data={mobileProducts}/>
+                         <ProductList data={FishFood}/>
 
-                         <ProductList data={wirlessProducts}/>
+                      </Row>
+                   </Container>
+               </section>
+                  
+
+                  {/* bowls */}
+
+               <section className='new__arrivals'>
+                   <Container>
+                      <Row>
+                          <Col lg='12' className='text-center mb-5'>
+                              <h2 className="section__title">Feed Bowls</h2>
+                          </Col>
+
+                         <ProductList data={Bowl}/>
 
 
                       </Row>
                    </Container>
                </section>
-
+                
+                  {/* medicin */}
                 <section className='popular__category'>
                 <Container>
                       <Row>
                           <Col lg='12' className='text-center mb-5'>
-                              <h2 className="section__title">Popular Categorys</h2>
+                              <h2 className="section__title">Medicines</h2>
                           </Col>
 
-                         <ProductList data={popularProducts} />
+                         <ProductList data={medicines} />
 
                          <ProductList />
 

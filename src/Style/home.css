@@ -70,3 +70,9 @@
     color: var(--primary-color);
 
 }
+.hero__img{
+    
+    margin-left: 170px;
+    margin-top: 30px;
+    clip-path: circle();
+}    

@@ -1,58 +1,110 @@
-import productImg01 from "../images/double-sofa-01.png";
-import productImg02 from "../images/double-sofa-02.png";
-import productImg03 from "../images/double-sofa-03.png";
 
-import productImg04 from "../images/single-sofa-01.jpg";
-import productImg05 from "../images/single-sofa-02.jpg";
-import productImg06 from "../images/single-sofa-03.jpg";
-import productImg007 from "../images/single-sofa-04.png";
 
-import productImg07 from "../images/arm-chair-01.jpg";
-import productImg08 from "../images/arm-chair-02.jpg";
-import productImg09 from "../images/arm-chair-03.jpg";
-import productImg10 from "../images/arm-chair-01.jpg";
+//top brands
 
-import productImg13 from "../images/phone-01.jpg";
-import productImg14 from "../images/phone-02.jpg";
-import productImg15 from "../images/phone-03.png";
-import productImg16 from "../images/phone-04.jpg";
-import productImg17 from "../images/phone-05.jpg";
-import productImg18 from "../images/phone-06.jpg";
+import productImg01 from "../images/Cat/meoad.jpg"
+import productImg02 from "../images/dog/61D9g9TtnQL._SX522_.jpg"
+import productImg03 from "../images/dog/810ijaDJ8zL._SX466_.jpg"
+import productImg04 from "../images/dog/rcppmax.jpg"
+import productImg05 from "../images/Cat/meoadtuna.jpg"
+import productImg06 from "../images/Cat/ndcatad_.jpg"
+import productImg07 from "../images/dog/chapi.jpg"
+import productImg08 from "../images/dog/71tF-9nY0xL._SX466_PIbundle-2,TopRight,0,0_AA466SH20_.jpg"
 
-import productImg19 from "../images/watch-01.jpg";
-import productImg20 from "../images/watch-02.jpg";
-import productImg21 from "../images/watch-03.jpg";
-import productImg22 from "../images/watch-04.jpg";
 
-import productImg23 from "../images/wireless-01.png";
+//dog Foods
 
-import productImg25 from "../images/wireless-03.png";
+import productImg09 from "../images/dog/pedigreep1kg.jpg"
+import productImg10 from "../images/dog/rcgracyad.jpg"
+import productImg11 from "../images/dog/g.jpg"
+import productImg12 from "../images/dog/pedigreep1kg.jpg"
+import productImg13 from "../images/dog/drolsgravyad.jpg"
+import productImg14 from "../images/dog/rcppmax.jpg"
+import productImg15 from "../images/dog/6140NhEjjiL._SX522_.jpg"
+import productImg16 from "../images/dog/pedigreegravyad_.jpg"
+import productImg17 from "../images/dog/61FMddZfx2L._SX466_.jpg"
+import productImg18 from "../images/dog/en.jpg"
+import productImg19 from "../images/dog/810ijaDJ8zL._SX466_.jpg"
+import productImg20 from "../images/dog/rcpug.jpg"
 
-const products = [
+
+
+//cat fooods
+
+import productImg21 from "../images/Cat/whiskasadtuna.jpg"
+import productImg22 from "../images/Cat/meoad.jpg"
+import productImg23 from "../images/Cat/6187-S670OL._SX466_.jpg"
+import productImg24 from "../images/Cat/61u4au5zU6L._SX466_.jpg"
+import productImg25 from "../images/Cat/drkitten.jpg"
+import productImg26 from "../images/Cat/meoadtuna.jpg"
+import productImg27 from "../images/Cat/ndcatad_.jpg"
+import productImg28 from "../images/Cat/meogravykitten_.jpg"
+import productImg29 from "../images/Cat/meoad.jpg"
+import productImg30 from "../images/Cat/71lZFxrLdbL._SX522_PIbundle-3,TopRight,0,0_AA522SH20_.jpg"
+import productImg31 from "../images/Cat/whiskasadtuna.jpg"
+
+
+
+//fish food
+import productImg32 from "../images/toys/toy1.jpg"
+import productImg33 from "../images/toys/toy2.jpg"
+import productImg34 from "../images/toys/toy4.jpg"
+import productImg35 from "../images/toys/toy6.jpg"
+
+//Feed Bowls
+import productImg36 from "../images/bowl/feed1.jpg"
+import productImg37 from "../images/bowl/feed2.jpg"
+import productImg38 from "../images/bowl/feed3.jpg"
+import productImg39 from "../images/bowl/feed4.jpg"
+
+//medicines
+
+
+import productImg40 from "../images/medicines/medicin6.jpg"
+import productImg41 from "../images/medicines/medicin1.jpg"
+import productImg42 from "../images/medicines/medicin10.jpg"
+import productImg43 from "../images/medicines/medicin12.jpg"
+import productImg44 from "../images/medicines/medicin13.jpg"
+import productImg45 from "../images/medicines/fur.jpg"
+import productImg46 from "../images/medicines/medicin5.jpg"
+import productImg47 from "../images/medicines/medicin9.jpg"
+
+
+
+
+
+
+
+const products =[
+
   {
     id: "01",
-    productName: "Stone and Beam Westview ",
+    productName: "N & D Dog Food",
     imgUrl: productImg01,
-    category: "sofa",
-    price: 193,
+    category: "brand",
+    price: 253,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
-        rating: 4.7,
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
     ],
-    avgRating: 4.5,
+    avgRating: 4.7,
   },
 
   {
     id: "02",
-    productName: "Rivet Bigelow Modern ",
+    productName: "Drols Focus",
     imgUrl: productImg02,
-    category: "sofa",
+    category: "brand",
     price: 253,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -73,31 +125,9 @@ const products = [
 
   {
     id: "03",
-    productName: "Amazon Brand Modern Sofa",
+    productName: "Pedigree Pro",
     imgUrl: productImg03,
-    category: "sofa",
-    price: 173,
-    shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
-    reviews: [
-      {
-        rating: 4.6,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.7,
-  },
-  {
-    id: "26",
-    productName: "Rivet Bigelow Modern ",
-    imgUrl: productImg02,
-    category: "sofa",
+    category: "brand",
     price: 253,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -115,114 +145,97 @@ const products = [
     ],
     avgRating: 4.7,
   },
+
+
   {
     id: "04",
-    productName: "Fllufy Sheep Sofa",
+    productName: "Royal Canin Dog Food",
     imgUrl: productImg04,
-    category: "sofa",
-    price: 163,
+    category: "brand",
+    price: 253,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
-        rating: 4.6,
+        rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
-        rating: 4.9,
+        rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
     ],
     avgRating: 4.7,
   },
+
 
   {
     id: "05",
-    productName: "Faux Velvet Sofa",
+    productName: "N & D Dog Food",
     imgUrl: productImg05,
-    category: "sofa",
-    price: 163,
+    category: "brand",
+    price: 253,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
-        rating: 4.6,
+        rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
-        rating: 4.9,
+        rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
     ],
     avgRating: 4.7,
   },
+
 
   {
     id: "06",
-    productName: "Fllufy Sheep Sofa",
+    productName: "N & D Dog Food",
     imgUrl: productImg06,
-    category: "sofa",
-    price: 163,
+    category: "brand",
+    price: 253,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
-        rating: 4.6,
+        rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
-        rating: 4.9,
+        rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
     ],
     avgRating: 4.7,
   },
-  {
-    id: "07",
-    productName: "Sakarias Armchair",
-    imgUrl: productImg07,
-    category: "chair",
-    price: 99,
-    shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
-    reviews: [
-      {
-        rating: 4.6,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.7,
-  },
+  
 
   {
-    id: "27",
-    productName: "Modern Arm Sofa",
-    imgUrl: productImg007,
-    category: "sofa",
-    price: 173,
+    id: "07",
+    productName: "N & D Dog Food",
+    imgUrl: productImg07,
+    category: "brand",
+    price: 253,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
-        rating: 4.6,
+        rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
-        rating: 4.9,
+        rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
     ],
@@ -231,21 +244,21 @@ const products = [
 
   {
     id: "08",
-    productName: "Baltsar Chair",
+    productName: "N & D Dog Food",
     imgUrl: productImg08,
-    category: "chair",
-    price: 89,
+    category: "brand",
+    price: 253,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
-        rating: 4.6,
+        rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
-        rating: 4.9,
+        rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
     ],
@@ -254,21 +267,45 @@ const products = [
 
   {
     id: "09",
-    productName: "Helmar Chair",
+    productName: "N & D Dog Food",
     imgUrl: productImg09,
-    category: "chair",
-    price: 112,
+    category: "Dog",
+    price: 253,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
-        rating: 4.6,
+        rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
-        rating: 4.9,
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.7,
+  },
+
+
+  {
+    id: "10",
+    productName: "N & D Dog Food",
+    imgUrl: productImg10,
+    category: "Dog",
+    price: 253,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
     ],
@@ -276,11 +313,11 @@ const products = [
   },
 
   {
-    id: "10",
-    productName: "Apple iPhone 12 Pro",
-    imgUrl: productImg13,
-    category: "mobile",
-    price: 799,
+    id: "11",
+    productName: "N & D Dog Food",
+    imgUrl: productImg11,
+    category: "Dog",
+    price: 253,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -291,63 +328,19 @@ const products = [
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
-        rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.8,
-  },
-  {
-    id: "25",
-    productName: "Sakarias Armchair",
-    imgUrl: productImg10,
-    category: "chair",
-    price: 99,
-    shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
-    reviews: [
-      {
-        rating: 4.6,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        rating: 4.9,
+        rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
     ],
     avgRating: 4.7,
-  },
-  {
-    id: "11",
-    productName: "Apple iPhone 12 Max",
-    imgUrl: productImg14,
-    category: "mobile",
-    price: 799,
-    shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
-    reviews: [
-      {
-        rating: 4.8,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.8,
   },
 
   {
     id: "12",
-    productName: "Realme 8",
-    imgUrl: productImg15,
-    category: "mobile",
-    price: 599,
+    productName: "N & D Dog Food",
+    imgUrl: productImg12,
+    category: "Dog",
+    price: 253,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -358,19 +351,19 @@ const products = [
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
-        rating: 4.9,
+        rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
     ],
-    avgRating: 4.8,
+    avgRating: 4.7,
   },
 
   {
     id: "13",
-    productName: "One Plus Nord",
-    imgUrl: productImg16,
-    category: "mobile",
-    price: 799,
+    productName: "N & D Dog Food",
+    imgUrl: productImg13,
+    category: "Dog",
+    price: 253,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -381,19 +374,19 @@ const products = [
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
-        rating: 4.9,
+        rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
     ],
-    avgRating: 4.8,
+    avgRating: 4.7,
   },
-
+  
   {
     id: "14",
-    productName: "Apple iPhone 13 Pro",
-    imgUrl: productImg17,
-    category: "mobile",
-    price: 899,
+    productName: "N & D Dog Food",
+    imgUrl: productImg14,
+    category: "Dog",
+    price: 253,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -404,19 +397,19 @@ const products = [
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
-        rating: 4.9,
+        rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
     ],
-    avgRating: 4.8,
+    avgRating: 4.7,
   },
 
   {
     id: "15",
-    productName: "Samsung Galaxy S22",
-    imgUrl: productImg18,
-    category: "mobile",
-    price: 699,
+    productName: "N & D Dog Food",
+    imgUrl: productImg15,
+    category: "Dog",
+    price: 253,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -427,19 +420,19 @@ const products = [
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
-        rating: 4.9,
+        rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
     ],
-    avgRating: 4.8,
+    avgRating: 4.7,
   },
 
   {
     id: "16",
-    productName: "Rolex Watch",
-    imgUrl: productImg19,
-    category: "watch",
-    price: 299,
+    productName: "N & D Dog Food",
+    imgUrl: productImg16,
+    category: "Dog",
+    price: 253,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -450,19 +443,19 @@ const products = [
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
-        rating: 4.9,
+        rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
     ],
-    avgRating: 4.8,
+    avgRating: 4.7,
   },
 
   {
     id: "17",
-    productName: "Timex Easy Reader Watch",
-    imgUrl: productImg20,
-    category: "watch",
-    price: 299,
+    productName: "N & D Dog Food",
+    imgUrl: productImg17,
+    category: "Dog",
+    price: 253,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -473,19 +466,19 @@ const products = [
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
-        rating: 4.9,
+        rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
     ],
-    avgRating: 4.8,
+    avgRating: 4.7,
   },
 
   {
     id: "18",
-    productName: "Rolex Watch",
-    imgUrl: productImg21,
-    category: "watch",
-    price: 299,
+    productName: "N & D Dog Food",
+    imgUrl: productImg18,
+    category: "Dog",
+    price: 253,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -496,19 +489,20 @@ const products = [
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
-        rating: 4.9,
+        rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
     ],
-    avgRating: 4.8,
+    avgRating: 4.7,
   },
+
 
   {
     id: "19",
-    productName: "Apple Watch",
-    imgUrl: productImg22,
-    category: "watch",
-    price: 399,
+    productName: "N & D Dog Food",
+    imgUrl: productImg19,
+    category: "Dog",
+    price: 253,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -519,19 +513,20 @@ const products = [
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
-        rating: 4.9,
+        rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
     ],
-    avgRating: 4.8,
+    avgRating: 4.7,
   },
 
+  
   {
     id: "20",
-    productName: "Beat Studio Wireless",
-    imgUrl: productImg23,
-    category: "wireless",
-    price: 199,
+    productName: "N & D Dog Food",
+    imgUrl: productImg20,
+    category: "Dog",
+    price: 253,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -542,19 +537,43 @@ const products = [
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
-        rating: 4.9,
+        rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
     ],
-    avgRating: 4.8,
+    avgRating: 4.7,
+  },
+
+
+  {
+    id: "21",
+    productName: "N & D Dog Food",
+    imgUrl: productImg21,
+    category: "Cat",
+    price: 253,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.7,
   },
 
   {
     id: "22",
-    productName: "Beat EP Headphones",
-    imgUrl: productImg25,
-    category: "wireless",
-    price: 199,
+    productName: "N & D Dog Food",
+    imgUrl: productImg22,
+    category: "Cat",
+    price: 253,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -565,12 +584,622 @@ const products = [
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
-        rating: 4.9,
+        rating: 4.8,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
     ],
-    avgRating: 4.8,
+    avgRating: 4.7,
   },
-];
 
-export default products;
+  {
+    id: "23",
+    productName: "N & D Dog Food",
+    imgUrl: productImg23,
+    category: "Cat",
+    price: 253,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.7,
+  },
+
+  {
+    id: "24",
+    productName: "N & D Dog Food",
+    imgUrl: productImg24,
+    category: "Cat",
+    price: 253,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.7,
+  },
+
+
+  {
+    id: "25",
+    productName: "N & D Dog Food",
+    imgUrl: productImg25,
+    category: "Cat",
+    price: 253,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.7,
+  },
+
+
+  {
+    id: "26",
+    productName: "N & D Dog Food",
+    imgUrl: productImg26,
+    category: "Cat",
+    price: 253,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.7,
+  },
+
+  {
+    id: "27",
+    productName: "N & D Dog Food",
+    imgUrl: productImg27,
+    category: "Cat",
+    price: 253,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.7,
+  },
+
+
+  {
+    id: "28",
+    productName: "N & D Dog Food",
+    imgUrl: productImg28,
+    category: "Cat",
+    price: 253,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.7,
+  },
+
+
+  {
+    id: "29",
+    productName: "N & D Dog Food",
+    imgUrl: productImg29,
+    category: "Cat",
+    price: 253,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.7,
+  },
+
+  {
+    id: "30",
+    productName: "N & D Dog Food",
+    imgUrl: productImg30,
+    category: "Cat",
+    price: 253,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.7,
+  },
+
+  {
+    id: "30",
+    productName: "N & D Dog Food",
+    imgUrl: productImg30,
+    category: "Cat",
+    price: 253,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.7,
+  },
+
+
+  {
+    id: "31",
+    productName: "N & D Dog Food",
+    imgUrl: productImg31,
+    category: "Cat",
+    price: 253,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.7,
+  },
+
+  {
+    id: "32",
+    productName: "N & D Dog Food",
+    imgUrl: productImg32,
+    category: "Fishe",
+    price: 253,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.7,
+  },
+
+
+  {
+    id: "33",
+    productName: "N & D Dog Food",
+    imgUrl: productImg33,
+    category: "Fishe",
+    price: 253,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.7,
+  },
+
+
+  {
+    id: "34",
+    productName: "N & D Dog Food",
+    imgUrl: productImg34,
+    category: "Fishe",
+    price: 253,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.7,
+  },
+
+
+  {
+    id: "35",
+    productName: "N & D Dog Food",
+    imgUrl: productImg35,
+    category: "Fishe",
+    price: 253,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.7,
+  },
+
+  {
+    id: "36",
+    productName: "N & D Dog Food",
+    imgUrl: productImg36,
+    category: "Bowl",
+    price: 253,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.7,
+  },
+
+  {
+    id: "37",
+    productName: "N & D Dog Food",
+    imgUrl: productImg37,
+    category: "Bowl",
+    price: 253,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.7,
+  },
+
+  {
+    id: "38",
+    productName: "N & D Dog Food",
+    imgUrl: productImg38,
+    category: "Bowl",
+    price: 253,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.7,
+  },
+
+  {
+    id: "39",
+    productName: "N & D Dog Food",
+    imgUrl: productImg39,
+    category: "Bowl",
+    price: 253,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.7,
+  },
+
+  {
+    id: "40",
+    productName: "N & D Dog Food",
+    imgUrl: productImg40,
+    category: "med",
+    price: 253,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.7,
+  },
+
+  {
+    id: "41",
+    productName: "N & D Dog Food",
+    imgUrl: productImg41,
+    category: "med",
+    price: 253,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.7,
+  },
+
+  {
+    id: "42",
+    productName: "N & D Dog Food",
+    imgUrl: productImg42,
+    category: "med",
+    price: 253,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.7,
+  },
+
+  {
+    id: "43",
+    productName: "N & D Dog Food",
+    imgUrl: productImg43,
+    category: "med",
+    price: 253,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.7,
+  },
+
+
+  {
+    id: "44",
+    productName: "N & D Dog Food",
+    imgUrl: productImg44,
+    category: "med",
+    price: 253,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.7,
+  },
+
+  {
+    id: "45",
+    productName: "N & D Dog Food",
+    imgUrl: productImg45,
+    category: "med",
+    price: 253,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.7,
+  },
+
+  {
+    id: "46",
+    productName: "N & D Dog Food",
+    imgUrl: productImg46,
+    category: "med",
+    price: 253,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.7,
+  },
+
+  {
+    id: "47",
+    productName: "N & D Dog Food",
+    imgUrl: productImg47,
+    category: "med",
+    price: 253,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.7,
+  },
+
+
+]
+
+
+ export default products
