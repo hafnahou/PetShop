@@ -38,19 +38,19 @@ const Footer = () => {
                 </h4>
                 <ListGroup className='mb-3'>
                     <ListGroupItem className='ps-0 border-0'>
-                      <Link to="#">Mobile Pone</Link>
+                      <Link to="#">Dog Foods</Link>
                     </ListGroupItem>
 
                     <ListGroupItem className='ps-0 border-0'>
-                      <Link to="#">Modern sofa</Link>
+                      <Link to="#">Cat Foods</Link>
                     </ListGroupItem>
 
                     <ListGroupItem className='ps-0 border-0'>
-                      <Link to="#">arm chai</Link>
+                      <Link to="#">Toys</Link>
                     </ListGroupItem>
 
                     <ListGroupItem className='ps-0 border-0'>
-                      <Link to="#">smart waych</Link>
+                      <Link to="#">Medicine</Link>
                     </ListGroupItem>
                 </ListGroup>
               </div>

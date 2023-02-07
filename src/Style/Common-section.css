@@ -1,13 +1,25 @@
 
 
 
-.common_section{
-    background: linear-gradient(rgba(202, 185, 185, 0.562),rgba(black)) 
-    url("../assets/images/common.jpg") no-repeat center center;
-    background-size: cover;
-}
+.common_section {
+    background: linear-gradient(#d6c5c5,#000),
+    url("../assets/images/common.jpg") no-repeat center ;
+     background-size: cover;
+     height: 300px;
+    
+} 
+
+/* .common_section {
+    background-image: url(../assets/images/common.jpg) ;
+    height: 250px;
+    background-repeat: no-repeat;
+    text-align: center;
+    
+}  */
+
 
 .common_section h1{
-   color: #fff;
-   font-weight: 600;
+    color: #fff;
+    font-weight: 600;
+    
 }
