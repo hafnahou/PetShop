@@ -1,10 +1,15 @@
 import React from 'react'
+import CmmonSection from '../components/UI/CommonSection'
+import Helmet from '../components/Helmet/Helmet'
+
+
 
 const Shop = () => {
   return (
-    <div>
-      shop
-    </div>
+    <Helmet title='Shop'>
+      
+      <CmmonSection title='Products'/>
+    </Helmet>
   )
 }
 

@@ -7,6 +7,8 @@ import {motion} from 'framer-motion'
 import logo from '../../assets/images/eco-logo.png'
 import userIcon from '../../assets/images/user-icon.png'
 import { Container,Row,Badge } from 'reactstrap'
+import { useSelector } from 'react-redux'
+
 
 const nav__links =[
   {
@@ -26,6 +28,9 @@ const nav__links =[
 const Header = () => {
 
   const hederRef =useRef(null)
+
+   //to find totel quantity of product
+  const totalQuantity = useSelector(state=>state.cart.totalQuantity)
 
   const menuRef =useRef(null)
 
@@ -92,7 +97,7 @@ const Header = () => {
                 </span>
 
                 <span className='cart__icon'>
-                <Badge className='badge bg-black'>5</Badge>
+                <Badge className='badge bg-black'>{totalQuantity}</Badge>
                 <i class="ri-shopping-bag-line"></i>
                 </span>
 
