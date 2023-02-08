@@ -14,6 +14,19 @@ const Shop = () => {
   
   
    //filtering
+
+
+   const handleSerache = e =>{
+    const SerchTerm =e.target.value;
+
+    const SerchedProducts = products.filter(item => item.productName
+    .toLowerCase().includes(SerchTerm.toLowerCase()))
+
+    setProductsData(SerchedProducts)
+}
+
+
+
   const handleFilter = (e) =>{
     const filterValue =e.target.value;
     if(filterValue === "Dog") {
@@ -23,20 +36,6 @@ const Shop = () => {
 
       setProductsData(filteredProducts)
     }
-
-
-    const handleSerache = e =>{
-          const SerchTerm =e.target.value;
-
-          const SerchedProducts = products.filter(item => item.productName
-          .toLowerCase().includes(SerchTerm.toLowerCase()))
-
-          setProductsData(SerchedProducts)
-    }
-  
-
-
-
 
 
        //cat
