@@ -8,6 +8,7 @@ import { Container,Row,Col } from 'reactstrap'
 
 
 const Shop = () => { 
+    
 
   const [productsData,setProductsData]=useState(products)
   
@@ -22,6 +23,21 @@ const Shop = () => {
 
       setProductsData(filteredProducts)
     }
+
+
+    const handleSerache = e =>{
+          const SerchTerm =e.target.value;
+
+          const SerchedProducts = products.filter(item => item.productName
+          .toLowerCase().includes(SerchTerm.toLowerCase()))
+
+          setProductsData(SerchedProducts)
+    }
+  
+
+
+
+
 
        //cat
     if(filterValue === "Cat") {
@@ -103,7 +119,9 @@ const Shop = () => {
               </Col>
               <Col lg='6' md='6'>
                  <div className="serch__box">
-                    <input type="text" placeholder='Serch.....' />
+                    <input type="text"
+                     placeholder='Serch.....'
+                     onChange={handleSerache} />
                     <span>
                        <i class="ri-search-line"></i>
                     </span>
@@ -113,7 +131,7 @@ const Shop = () => {
           </Row>
         </Container>
 
-        <section>
+        <section className='pt-0'>
               <Container>
                 <Row>
                   {
