@@ -1,16 +1,88 @@
-import React from 'react'
+import React, { useState } from 'react'
 import CmmonSection from '../components/UI/CommonSection'
 import Helmet from '../components/Helmet/Helmet'
+import '../Style/shop.css'
+import products from '../assets/data/products'
+import ProductLists from '../components/UI/ProductList'
+import { Container,Row,Col } from 'reactstrap'
+
+
+const Shop = () => { 
+
+  const [productsData,setProductsData]=useState(products)
+  
+
+  const handleFilter = (e) =>{
+    const filterValue =e.target.value;
+    if(filterValue === "Dog") {
+      const filteredProducts =products.filter(
+        (item) =>item.category === "Dog"
+      );
+
+      setProductsData(filteredProducts)
+    }
+  }
+      
+ 
 
 
 
-const Shop = () => {
   return (
     <Helmet title='Shop'>
       
       <CmmonSection title='Products'/>
+
+      <section>
+        <Container>
+          <Row>
+              <Col lg='3' md='3'>
+                <div className="filter__widget">
+                  <select onClick={handleFilter} >
+                  <option>Filter By Category</option>
+                      <option value="Dog">Dog Food</option>
+                      <option value="Cat">Cat food</option>
+                      <option value="Toys">Toys</option>
+                      <option value="Feed">Feed Bowls</option>
+                      <option value="medicine">Medicines</option>
+                  </select>
+                </div>
+              </Col>
+              <Col lg='3' md='3'>
+              <div className="filter__widget">
+                  <select >
+                  <option>sort By Category</option>
+                      <option value="ascending">Assending</option>
+                      <option value="decending">Decending</option>
+        
+                  </select>
+                </div>
+              </Col>
+              <Col lg='6' md='6'>
+                 <div className="serch__box">
+                    <input type="text" placeholder='Serch.....' />
+                    <span>
+                       <i class="ri-search-line"></i>
+                    </span>
+                 </div>
+              </Col>
+              
+          </Row>
+        </Container>
+
+        <section>
+              <Container>
+                <Row>
+                  {
+                    productsData.length === 0? <h1>No Products Are Frond</h1>
+                    : <ProductLists data={productsData}/>
+                  }
+                </Row>
+                
+              </Container>
+        </section>
+      </section>
     </Helmet>
   )
-}
+ };
 
 export default Shop

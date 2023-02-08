@@ -2,24 +2,25 @@
 
 
 .common_section {
-    background: linear-gradient(#d6c5c5,#000),
+    background: 
     url("../assets/images/common.jpg") no-repeat center ;
      background-size: cover;
-     height: 300px;
+     height: 280px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     
+     
+     
     
 } 
 
-/* .common_section {
-    background-image: url(../assets/images/common.jpg) ;
-    height: 250px;
-    background-repeat: no-repeat;
-    text-align: center;
-    
-}  */
+
 
 
 .common_section h1{
     color: #fff;
+    background-color: rgb(30, 46, 46);
     font-weight: 600;
     
 }
