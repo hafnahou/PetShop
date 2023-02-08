@@ -15,18 +15,6 @@ const Shop = () => {
   
    //filtering
 
-
-   const handleSerache = e =>{
-    const SerchTerm =e.target.value;
-
-    const SerchedProducts = products.filter(item => item.productName
-    .toLowerCase().includes(SerchTerm.toLowerCase()))
-
-    setProductsData(SerchedProducts)
-}
-
-
-
   const handleFilter = (e) =>{
     const filterValue =e.target.value;
     if(filterValue === "Dog") {
@@ -77,9 +65,19 @@ const Shop = () => {
       setProductsData(filteredProducts)
     }
 
-      
+  }
 
 
+  //serching
+
+
+  const handleSerache = e =>{
+    const SerchTerm =e.target.value;
+
+    const SerchedProducts = products.filter(item => item.productName
+    .toLowerCase().includes(SerchTerm.toLowerCase()))
+
+    setProductsData(SerchedProducts)
   }
       
  
@@ -133,8 +131,8 @@ const Shop = () => {
         <section className='pt-0'>
               <Container>
                 <Row>
-                  {
-                    productsData.length === 0? <h1>No Products Are Frond</h1>
+                  {  
+                    productsData.length === 0? <h1 className='text-center fs-4'>No Products Are Frond</h1>
                     : <ProductLists data={productsData}/>
                   }
                 </Row>
