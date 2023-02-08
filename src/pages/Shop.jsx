@@ -11,7 +11,8 @@ const Shop = () => {
 
   const [productsData,setProductsData]=useState(products)
   
-
+  
+   //filtering
   const handleFilter = (e) =>{
     const filterValue =e.target.value;
     if(filterValue === "Dog") {
@@ -21,6 +22,49 @@ const Shop = () => {
 
       setProductsData(filteredProducts)
     }
+
+       //cat
+    if(filterValue === "Cat") {
+      const filteredProducts =products.filter(
+        (item) =>item.category === "Cat"
+      );
+
+      setProductsData(filteredProducts)
+    }
+
+      // toys
+    if(filterValue === "Toy") {
+      const filteredProducts =products.filter(
+        (item) =>item.category === "Toy"
+      );
+
+      setProductsData(filteredProducts)
+    }
+
+
+       //feed Bowl
+    if(filterValue === "Bowl") {
+      const filteredProducts =products.filter(
+        (item) =>item.category === "Bowl"
+      );
+
+      setProductsData(filteredProducts)
+    }
+
+
+
+    //medicine
+    if(filterValue === "med") {
+      const filteredProducts =products.filter(
+        (item) =>item.category === "med"
+      );
+
+      setProductsData(filteredProducts)
+    }
+
+      
+
+
   }
       
  
@@ -41,9 +85,9 @@ const Shop = () => {
                   <option>Filter By Category</option>
                       <option value="Dog">Dog Food</option>
                       <option value="Cat">Cat food</option>
-                      <option value="Toys">Toys</option>
-                      <option value="Feed">Feed Bowls</option>
-                      <option value="medicine">Medicines</option>
+                      <option value="Toy">Toys</option>
+                      <option value="Bowl">Feed Bowls</option>
+                      <option value="med">Medicines</option>
                   </select>
                 </div>
               </Col>

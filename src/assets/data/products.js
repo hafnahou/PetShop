@@ -45,7 +45,7 @@ import productImg31 from "../images/Cat/whiskasadtuna.jpg"
 
 
 
-//fish food
+//toys
 import productImg32 from "../images/toys/toy1.jpg"
 import productImg33 from "../images/toys/toy2.jpg"
 import productImg34 from "../images/toys/toy4.jpg"
@@ -830,7 +830,7 @@ const products =[
     id: "32",
     productName: "N & D Dog Food",
     imgUrl: productImg32,
-    category: "Fishe",
+    category: "Toy",
     price: 253,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -854,7 +854,7 @@ const products =[
     id: "33",
     productName: "N & D Dog Food",
     imgUrl: productImg33,
-    category: "Fishe",
+    category: "Toy",
     price: 253,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -878,7 +878,7 @@ const products =[
     id: "34",
     productName: "N & D Dog Food",
     imgUrl: productImg34,
-    category: "Fishe",
+    category: "Toy",
     price: 253,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -902,7 +902,7 @@ const products =[
     id: "35",
     productName: "N & D Dog Food",
     imgUrl: productImg35,
-    category: "Fishe",
+    category: "Toy",
     price: 253,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",

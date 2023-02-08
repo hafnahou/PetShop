@@ -19,7 +19,7 @@ const Home = () => {
     const [TopbrandsProducts,setTopBrands]=useState([])
     const [DogFoods,setDogFoods]=useState([])
     const [catFoods,SetCatFoods]=useState([])
-    const [FishFood,setFishFoods]=useState([])
+    const [Toys,setToys]=useState([])
     const [Bowl,setBowl]=useState([])
     const [medicines,setMedicines]=useState([])
 
@@ -40,15 +40,12 @@ const Home = () => {
             (item)=>item.category === "Cat" )
 
 
-          const filteredFishfoods =products.filter(
-            (item)=>item.category === "Fishe" )
+          const filteredtoys =products.filter(
+            (item)=>item.category === "Toy" )
 
             const filteredFeedBowl =products.filter(
               (item)=>item.category === "Bowl" )
              
-              const filteredPopularProducts =products.filter(
-                (item)=>item.category === "watch"
-              )
 
               const filteredmedicines =products.filter(
                 (item)=>item.category === "med"
@@ -61,12 +58,17 @@ const Home = () => {
             
        
         
-      
+        //brand
         setTopBrands(filteredTopBrands);
+        //dog food
         setDogFoods(filteredDogFoods)
+        //cat food
         SetCatFoods(filteredcatFoods)
-        setFishFoods(filteredFishfoods)
+        //toys
+         setToys(filteredtoys)
+        //feed bowl
         setBowl(filteredFeedBowl)
+        //medicine
         setMedicines(filteredmedicines)
 
 
@@ -175,7 +177,7 @@ const Home = () => {
                               <h2 className="section__title">Toys</h2>
                           </Col>
 
-                         <ProductList data={FishFood}/>
+                         <ProductList data={Toys}/>
 
                       </Row>
                    </Container>
