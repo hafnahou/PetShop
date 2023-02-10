@@ -24,7 +24,7 @@ const cartSlice = createSlice({
                 state.cartItems.push({
                     id:newItem.id,
                     productName:newItem.productName,
-                    image:newItem.imgUrl,
+                    imgUrl:newItem.imgUrl,
                     price:newItem.price,
                     quantity:1,
                     totalprice:newItem.price
@@ -37,11 +37,7 @@ const cartSlice = createSlice({
                 (newItem.price)
               }
 
-              state.totalAmount=state.cartItems.reduce((total,item)=>
-              total+Number(item.price) * Number
-              (item.quantity)
-              
-              );
+   
 
               console.log(state.totalQuantity)
               console.log(state.cartItems)
@@ -51,6 +47,22 @@ const cartSlice = createSlice({
 
     
     },
+     //cart product delete funtion
+    deleteItem:(state,action)=>{
+        const id =action.payload
+        const existingItem=state.cartItems.find(item=>item.id==id)
+
+        if(existingItem){
+            state.cartItems=state.cartItems.filter(item=>item.id==id)
+
+            state.totalQuantity=state.totalQuantity - existingItem.quantity
+        }
+
+        state.totalAmount=state.cartItems.reduce((total,item)=>
+        total+Number(item.price) * Number(item.quantity)
+        
+        );
+    }
 })
 
 

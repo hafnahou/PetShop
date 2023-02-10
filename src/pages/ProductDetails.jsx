@@ -148,7 +148,10 @@ const ProductDetails = () => {
                                           <div className="from__group">
                                               <input type="text"
                                                placeholder='Enter Name' 
-                                                ref={reviewUser} />
+                                                ref={reviewUser}
+                                                required
+                                                 />
+                                              
                                           </div>
 
 
@@ -166,7 +169,10 @@ const ProductDetails = () => {
                                                 ref={reviewmsg} //msg
                                                rows={4} 
                                               type="text" 
-                                              placeholder='Review Message'/>
+                                              placeholder='Review Message'
+                                              required
+                                              
+                                              />
                                           </div>
 
                                          <button type='submit' className='buy__btn'>Submit</button>
