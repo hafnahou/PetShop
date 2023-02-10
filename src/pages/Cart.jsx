@@ -8,11 +8,19 @@ import {Container,Row,Col} from "reactstrap"
 import { motion } from 'framer-motion'
 import { cartActions } from '../redux/slices/cartSlice'
 import { useSelector,useDispatch } from 'react-redux'
+import { Link } from 'react-router-dom'
+
+
 
 const Cart = () => {
 
 
    const cartItems =useSelector((state)=>state.cart.cartItems)
+
+
+   //totel amount
+
+   const totalAmount =useSelector(state=>state.cart.totalAmount)
 
 
 
@@ -56,13 +64,25 @@ const Cart = () => {
 
 
                        }
-      
                         
                     </Col> 
 
 
 
-                    <Col lg='3'></Col>
+                    <Col lg='3'>
+                          <div>
+                             <h6 className='d-flex align-items-center justify-content-between'>SubTotel<span className='fs-4 fw-bold'>{totalAmount}</span></h6>
+                
+                          </div>
+                          <p className='fs-6 mt-2'>Taxes and Shping will caluculated in Checkout</p>
+                          <div>
+                             
+                            <button className='buy__btn w-100 '><Link to='/Checkout'>Checkout</Link></button>
+
+                            <button className='buy__btn w-100 mt-3'><Link to='/Shop'>Continue shping</Link></button>
+
+                          </div>
+                    </Col>
                  </Row>
                  </Container>
              </section>
