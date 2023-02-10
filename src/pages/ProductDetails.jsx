@@ -17,36 +17,41 @@ const ProductDetails = () => {
 
   const {id}=useParams()
   const product =products.find(item=>item.id === id)
-   console.log(product)
   const {imgUrl,productName,price,avgRating,reviews,description,shortDesc,category} = product
   
    const [tab,setTab] =useState('desc')
 
-  //subimt button share expirence
+
   const [rating,setRating]=useState(null)
 
    //related Products
   const relatedProducts = products.filter(item=>item.category===category)
   
-  
+    const reviewUser =useRef("")
+    const reviewmsg =useRef("")
 
-  
-  const reviewUser=useRef('')
-  const reviewMsg =useRef('')
 
   const submitHandler =(e)=>{
-    e.preventDefault()
-
-
-    const reciewUserName = reviewUser.current.value
-    const reciewUserMsg = reviewMsg.current.value
-
     
+       e.preventDefault();
+
+
+       const reviewUserName =reviewUser.current.value;
+       const reviewuserMeg =reviewmsg.current.value;
+
+        const reviewObj ={
+           userName:reviewUserName,
+           text:reviewuserMeg,
+            rating,
+
+        }
+      
+         console.log(reviewObj)
+         toast.success("Review Submited")           //rating succes alerts
 
   }
 
   const dispatch =useDispatch()
-
 
    const addToCart =()=>{
     dispatch(cartActions.addItem({
@@ -82,11 +87,11 @@ const ProductDetails = () => {
 
                     <div className='product__rating d-flex align-items-center gap-5 mb-3'>
                            <div>
-                            <span onClick={()=>setRating(1)}><i class="ri-star-s-fill"></i></span>
-                            <span  onClick={()=>setRating(2)}><i class="ri-star-s-fill"></i></span>
-                            <span  onClick={()=>setRating(3)}><i class="ri-star-s-fill"></i></span>
-                            <span  onClick={()=>setRating(4)}><i class="ri-star-s-fill"></i></span>
-                            <span  onClick={()=>setRating(5)}><i class="ri-star-half-s-line"></i></span>
+                            <span><i class="ri-star-s-fill"></i></span>
+                            <span  ><i class="ri-star-s-fill"></i></span>
+                            <span ><i class="ri-star-s-fill"></i></span>
+                            <span  ><i class="ri-star-s-fill"></i></span>
+                            <span  ><i class="ri-star-half-s-line"></i></span>
                            </div>
                            <p>(<span>{avgRating}</span> rating)</p>
                     </div>
@@ -143,25 +148,25 @@ const ProductDetails = () => {
                                           <div className="from__group">
                                               <input type="text"
                                                placeholder='Enter Name' 
-                                               ref={reviewUser} />
+                                                ref={reviewUser} />
                                           </div>
 
 
                                           <div className="from__group d-flex align-items-center gap-4 rating__group">
-                                              <span>1<i className='ri-star-s-fill'></i></span>
-                                              <span>2<i className='ri-star-s-fill'></i></span>
-                                              <span>3<i className='ri-star-s-fill'></i></span>
-                                              <span>4<i className='ri-star-s-fill'></i></span>
-                                              <span>5<i className='ri-star-s-fill'></i></span>
+                                              <motion.span whileTap={{scale:1.3}} onClick={()=>setRating(1)}>1<i className='ri-star-s-fill'></i></motion.span>
+                                              <motion.span whileTap={{scale:1.3}} onClick={()=>setRating(2)} >2<i className='ri-star-s-fill'></i></motion.span>
+                                              <motion.span whileTap={{scale:1.3}}  onClick={()=>setRating(3)}>3<i className='ri-star-s-fill'></i></motion.span>
+                                              <motion.span whileTap={{scale:1.3}}  onClick={()=>setRating(4)}>4<i className='ri-star-s-fill'></i></motion.span>
+                                              <motion.span whileTap={{scale:1.3}}   onClick={()=>setRating(5)}>5<i className='ri-star-s-fill'></i></motion.span>
 
                                           </div>
 
                                           <div className="from__group">
                                               <textarea 
-                                              ref={reviewMsg} //msg
+                                                ref={reviewmsg} //msg
                                                rows={4} 
                                               type="text" 
-                                              placeholder='Review Message...' />
+                                              placeholder='Review Message'/>
                                           </div>
 
                                          <button type='submit' className='buy__btn'>Submit</button>
