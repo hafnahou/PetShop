@@ -7,6 +7,9 @@ import ProductDetails from '../pages/ProductDetails'
 import  Checkout  from '../pages/Checkout'
 import Login from '../pages/Login'
 import Signup from '../pages/Signup'
+import Protectedroute from './Protectedroute'
+
+
 import { Route, Routes,Navigate } from 'react-router-dom'    
 
 
@@ -19,7 +22,9 @@ const Routers=()=> {
     <Route path='shop' element={<Shop/>} />
     <Route path='shop/:id' element={<ProductDetails/>} />
     <Route path='cart' element={<Cart/>} />
-    <Route path='checkout' element={<Checkout/>} />
+    <Route path='checkout' element={<Protectedroute>
+           <Checkout/>
+    </Protectedroute>} />
     <Route path='login' element={<Login/>} />
     <Route path='signup' element={<Signup/>} />
   </Routes>
