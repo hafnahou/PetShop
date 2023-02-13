@@ -86,7 +86,9 @@
 
 }
 
-.nav__icons .profile .profile__actions{
+.nav__icons
+.profile
+.profile__actions{
     position: absolute;
     top: 98%;
     left: 0;
@@ -102,9 +104,18 @@
 
 
 }
-
 .show__profileActions{
     display: block;
+    
+}
+
+
+
+.profile__actions{
+    display: block;
+    background-color: bisque;
+    
+    
 }
 
 
